@@ -12,7 +12,7 @@ ___This homework is due by 8am, on 11/04/2015___
 
 Create a javascript object with the following methods (not just global functions). The data can be grabbed from http://swapi.co/.
 
-'''js
+```js
 getPerson(id) // - Returns one person.
 getPeople([page]) // - Returns everyone, paged. Defaults to page 1.
 getFilm(id) // - Returns one film.
@@ -25,7 +25,7 @@ getStarship(id) // - Returns a starship.
 getStarships([page]) // - Returns all starships, paged. Defaults to page 1.
 getVehicle(id) // - Returns a vehicle.
 getVehicles([page]) // - Returns all vehicles, paged. Defaults to page 1.
-'''
+```
 
 ## Hard Mode
 
