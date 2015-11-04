@@ -26,10 +26,10 @@ ajaxCallId("planets", 1, function(planets) {
 ajaxCallId("species", 1, function(species) {
     console.log(species);
 });
-ajaxCallId("starships", 1, function(starships) {
+ajaxCallId("starships", 9, function(starships) {
     console.log(starships);
 });
-ajaxCallId("vehicles", 1, function(vehicles) {
+ajaxCallId("vehicles", 4, function(vehicles) {
     console.log(vehicles);
 });
 
