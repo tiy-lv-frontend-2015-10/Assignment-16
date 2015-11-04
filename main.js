@@ -17,16 +17,16 @@
 	})
 
 
-	starWarsData.getPeople = function(callback){
+	starWarsData.getPeople = function(page, callback){
 		$.ajax({
-			url: "https://swapi.co/api/people/",
+			url: "https://swapi.co/api/people/" +page,
 			method: 'get',
 			dataType: 'json',
 		}).then(function (response){
 			callback(response);
 		});
 	}
-	starWarsData.getPeople(function(person){
+	starWarsData.getPeople(1, function(person){
 		console.log(person);
 	})
 
@@ -45,16 +45,16 @@
 	})
 	
 
-	starWarsData.getFilms = function(callback){
+	starWarsData.getFilms = function(page, callback){
 		$.ajax({
-			url: "https://swapi.co/api/films/",
+			url: "https://swapi.co/api/films/" +page,
 			method: 'get',
 			dataType: 'json',
 		}).then(function (response){
 			callback(response);
 		});
 	}
-	starWarsData.getFilms(function(films){
+	starWarsData.getFilms(1, function(films){
 		console.log(films);
 	})
 
@@ -73,16 +73,16 @@
 	})
 
 
-	starWarsData.allPlanets = function(callback){
+	starWarsData.allPlanets = function(page, callback){
 		$.ajax({
-			url: "https://swapi.co/api/planets/",
+			url: "https://swapi.co/api/planets/" +page,
 			method: 'get',
 			dataType: 'json',
 		}).then(function (response){
 			callback(response);
 		});
 	}
-	starWarsData.allPlanets(function(planets){
+	starWarsData.allPlanets(1, function(planets){
 		console.log(planets);
 	})
 
@@ -102,9 +102,9 @@
 	})
 
 
-	starWarsData.allSpecies = function(callback){
+	starWarsData.allSpecies = function(page, callback){
 		$.ajax({
-			url: "https://swapi.co/api/species/",
+			url: "https://swapi.co/api/species/" +page,
 			method: 'get',
 			dataType: 'json',
 		}).then(function (response){
@@ -112,7 +112,7 @@
 		});
 	}
 
-	starWarsData.allSpecies(function(species){
+	starWarsData.allSpecies(1, function(species){
 		console.log(species);
 	})
 
@@ -132,9 +132,9 @@
 	})
 
 
-	starWarsData.allStarships = function(callback){
+	starWarsData.allStarships = function(page, callback){
 		$.ajax({
-			url: "https://swapi.co/api/starships",
+			url: "https://swapi.co/api/starships/" +page,
 			method: 'get',
 			dataType: 'json',
 		}).then(function(response){
@@ -142,7 +142,7 @@
 		});
 	}
 
-	starWarsData.allStarships(function(starships){
+	starWarsData.allStarships(3, function(starships){
 		console.log(starships);
 	})
 
@@ -160,9 +160,9 @@
 		console.log(vehicles);
 	})
 
-	starWarsData.allVehicles = function(callback){
+	starWarsData.allVehicles = function(page, callback){
 		$.ajax({
-			url: "https://swapi.co/api/vehicles/",
+			url: "https://swapi.co/api/vehicles/" +page,
 			method: 'get',
 			dataType: 'json',
 		}).then(function(response){
@@ -170,6 +170,6 @@
 		});
 	}
 
-	starWarsData.allVehicles(function(vehicles){
+	starWarsData.allVehicles(4, function(vehicles){
 		console.log(vehicles);
 	})
