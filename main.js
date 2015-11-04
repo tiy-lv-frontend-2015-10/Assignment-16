@@ -57,31 +57,160 @@ swapiObj.getFilms = function(films,callback) {
 
 //getFilms([page]) // - Returns all films, paged. Defaults to page 1.
 
+swapiObj.getFilms = function(callback) {
+	var swapiData = "http://swapi.co/api/films/";
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+swapiObj.getFilms(function(films) {
+		console.log(films);
+	})
+
 
 //getPlanet(id) // - Returns a planet.
+
+swapiObj.getPlanet = function(id,callback) {
+	var swapiData = "http://swapi.co/api/planets/"+id;
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+	swapiObj.getPlanet(1, function(planet) {
+		console.log(planet);
+	})
 
 
 //getPlanets([page]) // - Returns all plaents, paged. Defaults to page 1.
 
+swapiObj.getPlanets = function(callback) {
+	var swapiData = "http://swapi.co/api/planets/";
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+swapiObj.getPlanets(function(planets) {
+		console.log(planets);
+	})
+
 
 //getSpecies(id) // - Returns one species.
 
+swapiObj.getSpecies = function(id,callback) {
+	var swapiData = "http://swapi.co/api/species/"+id;
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+	swapiObj.getSpecies(1, function(species) {
+		console.log(species);
+	})
 
 //getAllSpecies([page]) // - Returns all species, paged. Defaults to page 1.
 
+swapiObj.getAllSpecies = function(callback) {
+	var swapiData = "http://swapi.co/api/species/";
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+swapiObj.getAllSpecies(function(allSpecies) {
+		console.log(allSpecies);
+	})
 
 //getStarship(id) // - Returns a starship.
 
+swapiObj.getStarship = function(id,callback) {
+	var swapiData = "http://swapi.co/api/starships/"+id;
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+	swapiObj.getStarship(12, function(starship) {
+		console.log(starship);
+	})
 
 //getStarships([page]) // - Returns all starships, paged. Defaults to page 1.
+
+swapiObj.getStarships = function(callback) {
+	var swapiData = "http://swapi.co/api/starships/";
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+	swapiObj.getStarships(function(starships) {
+		console.log(starships);
+	})
 
 
 //getVehicle(id) // - Returns a vehicle.
 
+swapiObj.getVehicle = function(id,callback) {
+	var swapiData = "http://swapi.co/api/vehicles/"+id;
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
+
+	swapiObj.getVehicle(14, function(vehicle) {
+		console.log(vehicle);
+	})
 
 //getVehicles([page]) // - Returns all vehicles, paged. Defaults to page 1.
 
+swapiObj.getVehicles = function(callback) {
+	var swapiData = "http://swapi.co/api/vehicles/";
+	$.ajax({
+			url: swapiData,
+			method: 'get',
+			dataType: 'json'
+	}).then(function(response) {
+		callback(response);
+	})
+};
 
+	swapiObj.getVehicles(function(vehicles) {
+		console.log(vehicles);
+	})
 
 
 //      "name": "Luke Skywalker",
