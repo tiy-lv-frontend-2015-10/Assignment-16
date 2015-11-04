@@ -3,7 +3,6 @@
 
 	}
 
-
 	starWarsData.getPerson = function(id, callback){
 		$.ajax({
 			url: "https://swapi.co/api/people/" +id,
