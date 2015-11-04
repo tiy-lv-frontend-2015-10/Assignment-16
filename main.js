@@ -119,7 +119,7 @@ var store_num = 0;
       console.log(bug);
     });
     var creatures = new SW();
-    worlds.getAllSpecies(2, function(bugs){
+    creatures.getAllSpecies(2, function(bugs){
       console.log(bugs);
     });
     var spacebuggy = new SW();
@@ -138,9 +138,5 @@ var store_num = 0;
     rides.getVehicles(3, function(jalopies){
       console.log(jalopies);
     });
-
-
-
-
 
 });
