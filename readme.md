@@ -1,12 +1,5 @@
-# 11/03/15
 
-___This homework is due by 8am, on 11/04/2015___
-
-## Objectives
-
-- Understand how to create objects with methods
-- Understand how to use Ajax with REST
-- Understand pagination and how to use it
+##Assignment 16 
 
 ## Normal Mode
 
@@ -31,6 +24,3 @@ getVehicles([page]) // - Returns all vehicles, paged. Defaults to page 1.
 
 Cache the data using [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) after the inital grab of whatever particlar call was made.
 
-## Deliverables
-
-1. Fork this repository and create a pull request with your project.
