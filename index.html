@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TheForceIsStrongWithThisOne</title>
+</head>
+<body style="background: black;">
+	<div id="agent" style="font-size: 2.8em; color: #62A6EA;"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="main.js"></script>
+<script type="text/javascript">
+var imf = "...a long time ago,                                                                                                                                              ....in a galaxy far, far away.......";
+
+function printSentence(id, sentence){
+
+				var index=0;
+				var intObject= setInterval(function() {
+							 document.getElementById(id).innerHTML+=sentence[index];
+							 index++;
+							 if(index==sentence.length){
+										 clearInterval(intObject);
+								}
+						}, 50);
+}
+printSentence('agent', imf);
+</script>
+</body>
+</html>
