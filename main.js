@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+var store_num = 0;
+
   function SW() {
 
     function useTheForce(dataURL, cb) {
@@ -9,6 +11,12 @@ $(document).ready(function() {
         dataType: 'json',
       }).then (function (resultData) {
           cb(resultData);
+          store_num += 1;
+          var stor_str = store_num.toString();
+          var storKey = "store" + stor_str;
+          localStorage.setItem(storKey, resultData);
+          console.log(storKey, resultData);
+          console.log(localStorage.getItem(storKey));
       });
 
     }
