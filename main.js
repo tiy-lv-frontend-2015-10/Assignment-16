@@ -2,7 +2,7 @@ var StarWarsObject = function () {};
 
     function ajaxCallId (path, id, callback) {
     var url = "http://www.swapi.co/api/";
-    url = url + path + "/" + id;
+    url = url + path + "/" + id + "/";
        
     $.ajax({
          url: url,
@@ -25,6 +25,12 @@ ajaxCallId("planets", 1, function(planets) {
 });
 ajaxCallId("species", 1, function(species) {
     console.log(species);
+});
+ajaxCallId("starships", 1, function(starships) {
+    console.log(starships);
+});
+ajaxCallId("vehicles", 1, function(vehicles) {
+    console.log(vehicles);
 });
 
 
@@ -57,8 +63,12 @@ ajaxCallPath("planets", function(planets) {
 ajaxCallPath("species", function(species) {
     console.log(species);
 });
-
-
+ajaxCallPath("starships", function(starships) {
+    console.log(starships);
+});
+ajaxCallPath("vehicles", function(vehicles) {
+    console.log(vehicles);
+});
 
 //ajaxCall.person (function(person){
   //  console.log(person);
