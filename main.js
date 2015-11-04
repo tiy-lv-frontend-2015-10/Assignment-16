@@ -1,6 +1,6 @@
 var StarWarsObject = function () {};
 
-    function ajaxCallPath (path, id, callback) {
+    function ajaxCallId (path, id, callback) {
     var url = "http://www.swapi.co/api/";
     url = url + path + "/" + id;
         /*if (path) {
@@ -21,10 +21,38 @@ var StarWarsObject = function () {};
     });
     console.log(url);
     };
-  
-ajaxCallPath("people", 1, function(people){
+
+ajaxCallId("people", 1, function(people){
     console.log(people);
-})
+});
+
+
+
+ function ajaxCallPath (path, callback) {
+    var url = "http://www.swapi.co/api/";
+    url = url + path + "/";
+        /*if (path) {
+            url = url + path + "/";
+        }
+        
+        if (id) {
+            url = url + id;
+        }*/
+            
+
+    $.ajax({
+         url: url,
+        method:'get',
+        dataType: 'JSON'
+    }).then(function(response){
+        callback(response);
+    });
+    console.log(url);
+    };
+  
+ajaxCallPath ("people", function(people) {
+    console.log(people);
+});
 
 
 //ajaxCall.person (function(person){
