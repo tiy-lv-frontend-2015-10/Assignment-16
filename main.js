@@ -70,19 +70,5 @@ ajaxCallPath("vehicles", function(vehicles) {
     console.log(vehicles);
 });
 
-//ajaxCall.person (function(person){
-  //  console.log(person);
-//});
-   
-//this.getPerson = function() {
-  //$.ajax(person);  
 
-//this.getPeople = function () {
-//};
-
-/*var person = new StarWarsObject();
-    StarWarsObject.getPerson(1, function(person) {
-    callback(person);
-   console.log(person); 
-});*/
 
