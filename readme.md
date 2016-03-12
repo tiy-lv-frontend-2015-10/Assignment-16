@@ -1,19 +1,6 @@
 # 11/03/15
 
-___This homework is due by 8am, on 11/04/2015___
-Theoretically, it's been done for several Millenia--
-...in a galaxy far, far away....
 
-## Objectives
-
-- Understand how to create objects with methods
-	But huh...my methods didn't really create many objects...only casualties.
-- Understand how to use Ajax with REST
-	Representationally Transferred State to a galaxy far, far away....
-- Understand pagination and how to use it
-	...didn't really use it but ?page= worked. Too bad ?pageby= didn't. Or maybe?  ...no.
-
-## Normal Mode
 
 Create a javascript object with the following methods (not just global functions). The data can be grabbed from http://swapi.co/.
 
