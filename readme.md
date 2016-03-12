@@ -19,10 +19,10 @@ Create a javascript object with the following methods (not just global functions
 	getVehicles([page]) // - Returns all vehicles, paged. Defaults to page 1.
 ```
 
-## Hard Mode
+
 
 Cache the data using [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) after the initial grab of whatever particular call was made.
 
-## Deliverables
+
 
 1. Fork this repository and create a pull request with your project.
